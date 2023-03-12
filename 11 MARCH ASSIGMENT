@@ -1,0 +1,237 @@
+Q1: What is the difference between a t-test and a z-test? Provide an example scenario where you would
+use each type of test.
+
+ANS. 
+A t-test and a z-test are both statistical tests used to determine whether there is a significant difference between two sample means. The main difference between the two tests is that a z-test is used when the population standard deviation is known, whereas a t-test is used when the population standard deviation is unknown.
+
+Example Scenario:
+
+Suppose we want to determine if there is a significant difference between the mean scores of two different groups of students in a math exam. We know the standard deviation of the population from which one group was sampled but not the other.
+
+If we know the population standard deviation, we can use a z-test to determine if the difference in means is statistically significant. On the other hand, if we don't know the population standard deviation, we can use a t-test to determine if the difference in means is statistically significant.
+Q2: Differentiate between one-tailed and two-tailed tests.
+
+ANS. In hypothesis testing, a one-tailed test is a statistical test in which the alternative hypothesis is directional. That is, we are testing for the possibility of a difference in only one direction. For example, we might be testing whether a new medication increases the time it takes for people to fall asleep.
+
+On the other hand, a two-tailed test is a statistical test in which the alternative hypothesis is non-directional. That is, we are testing for the possibility of a difference in both directions. For example, we might be testing whether a new medication has an effect on the time it takes for people to fall asleep, but we don't know whether the effect will be an increase or a decrease.
+
+Q3: Explain the concept of Type 1 and Type 2 errors in hypothesis testing. Provide an example scenario for
+each type of error.
+
+ANS. In hypothesis testing, there are two types of errors: type 1 and type 2.
+
+A type 1 error occurs when we reject a true null hypothesis. This means that we conclude that there is a significant difference between two sample means when, in fact, there is no such difference. This error is also known as a false positive.
+
+Example: Suppose a pharmaceutical company is testing a new drug to lower cholesterol levels. If they conclude that the drug is effective when it is not, this would be a type 1 error.
+
+A type 2 error occurs when we fail to reject a false null hypothesis. This means that we conclude that there is no significant difference between two sample means when, in fact, there is such a difference. This error is also known as a false negative.
+
+Example: Suppose a pharmaceutical company is testing a new drug to lower cholesterol levels. If they conclude that the drug is not effective when it is, this would be a type 2 error.
+
+Q4: Explain Bayes's theorem with an example.
+ANS. Bayes's theorem is a mathematical formula used to calculate the probability of an event occurring based on prior knowledge of the event's probability and new evidence.
+
+The formula for Bayes's theorem is:
+
+P(A|B) = P(B|A) * P(A) / P(B)
+
+where:
+
+P(A|B) is the probability of event A occurring given that event B has occurred.
+P(B|A) is the probability of event B occurring given that event A has occurred.
+P(A) is the prior probability of event A occurring.
+P(B) is the probability of event B occurring.
+Example:
+
+Suppose a medical test for a certain disease is known to be accurate 95% of the time, meaning it gives false negatives 5% of the time. The disease occurs in 1% of the population. If a person tests positive
+
+
+Q5: What is a confidence interval? How to calculate the confidence interval, explain with an example.
+ANS.  A confidence interval is a range of values that we can be reasonably sure contains the true population parameter, given a sample from the population. In other words, it is an estimate of the range of values that the population parameter could fall within, based on the information contained in the sample. Confidence intervals are typically expressed as a range of values along with a level of confidence.
+
+To calculate a confidence interval, we need to know the sample mean, sample size, and standard deviation (or standard error) of the sample. We also need to specify the level of confidence we want to have in our estimate, usually expressed as a percentage. For example, a 95% confidence interval means that we are 95% confident that the true population parameter falls within the interval.
+
+Here is an example: Suppose we want to estimate the average height of all students at a particular school. We take a random sample of 50 students and measure their heights. We find that the sample mean height is 68 inches, and the standard deviation is 2 inches. To calculate a 95% confidence interval, we can use the following formula:
+
+Confidence interval = sample mean ± (critical value) x (standard error)
+
+where the critical value is obtained from a table of t-values or z-values, depending on the sample size and distribution, and the standard error is calculated as the standard deviation divided by the square root of the sample size.
+
+For example, if we assume a normal distribution and use a t-distribution with 49 degrees of freedom (i.e., sample size - 1), the critical value for a 95% confidence interval is approximately 2.009. The standard error is calculated as 2 / sqrt(50) = 0.283. Thus, the 95% confidence interval is:
+
+68 ± 2.009 x 0.283 = (67.43, 68.57)
+
+Interpretation: We are 95% confident that the true average height of all students at the school falls within the range of 67.43 inches to 68.57 inches.
+
+
+
+Q6. Use Bayes' Theorem to calculate the probability of an event occurring given prior knowledge of the
+event's probability and new evidence. Provide a sample problem and solution.
+ANS. Bayes' Theorem is a mathematical formula that helps us update our beliefs about the probability of an event occurring based on new evidence. It is defined as follows:
+
+P(A|B) = P(B|A) * P(A) / P(B)
+
+where P(A|B) is the probability of A given that B is true, P(B|A) is the probability of B given that A is true, P(A) is the prior probability of A, and P(B) is the probability of B.
+
+Here is an example problem:
+
+Suppose a patient has a rare disease that affects 1% of the population. A diagnostic test for this disease has a false positive rate of 5% and a false negative rate of 1%. If the patient tests positive for the disease, what is the probability that they actually have the disease?
+
+Solution:
+
+Let A be the event that the patient has the disease, and let B be the event that the patient tests positive for the disease.
+
+P(A) = 0.01 (prior probability)
+P(B|A) = 0.99 (true positive rate)
+P(B|~A) = 0.05 (false positive rate)
+P(~A) = 0.99 (complement of A)
+
+We can use Bayes' Theorem to calculate the probability of A given B:
+
+P(A|B) = P(B|A) * P(A) / P(B)
+= 0.99 * 0.01 / ((0.99 * 0.01) + (0.05 * 0.99))
+= 0.1667
+
+So the probability that the patient actually has the disease given a positive test result is about 16.67%.
+
+
+Q7. Calculate the 95% confidence interval for a sample of data with a mean of 50 and a standard deviation
+of 5. Interpret the results.
+
+ANS. A 95% confidence interval for a sample of data with a mean of 50 and a standard deviation of 5 can be calculated using the following formula:
+
+CI = x̄ ± z* (s/√n)
+
+where CI is the confidence interval, x̄ is the sample mean, s is the sample standard deviation, n is the sample size, and z* is the critical value from the standard normal distribution for a 95% confidence level, which is 1.96.
+
+Plugging in the values, we get:
+
+CI = 50 ± 1.96 * (5/√n)
+
+Assuming a sample size of n=100, we can calculate the confidence interval as:
+
+CI = 50 ± 1.96 * (5/√100) = 50 ± 0.98
+
+Interpretation: We can be 95% confident that the true population mean lies within the range of 49.02 to 50.98 based on our sample data.
+
+Q8. What is the margin of error in a confidence interval? How does sample size affect the margin of error?
+Provide an example of a scenario where a larger sample size would result in a smaller margin of error.
+ANS.  The margin of error is the range of values above and below the point estimate in a confidence interval that is likely to contain the true population parameter. Sample size affects the margin of error in that, all other things being equal, larger sample sizes will result in smaller margins of error, while smaller sample sizes will result in larger margins of error. This is because larger sample sizes provide more information and reduce the amount of sampling error. For example, if a pollster wanted to estimate the proportion of voters who support a particular candidate in a national election with a margin of error of plus or minus 2 percentage points and a confidence level of 95%, a larger sample size would result in a smaller margin of error.
+
+
+Q9. Calculate the z-score for a data point with a value of 75, a population mean of 70, and a population
+standard deviation of 5. Interpret the results.
+
+ANS. The z-score for a data point with a value of 75, a population mean of 70, and a population standard deviation of 5 can be calculated using the formula:
+
+z = (x - μ) / σ
+
+where x is the value of the data point, μ is the population mean, and σ is the population standard deviation. Substituting the given values, we get:
+
+z = (75 - 70) / 5 = 1
+
+Interpretation: The data point is 1 standard deviation above the population mean.
+
+Q10. In a study of the effectiveness of a new weight loss drug, a sample of 50 participants lost an average
+of 6 pounds with a standard deviation of 2.5 pounds. Conduct a hypothesis test to determine if the drug is
+significantly effective at a 95% confidence level using a t-test.
+
+ANS. To conduct a hypothesis test to determine if the weight loss drug is significantly effective at a 95% confidence level using a t-test, we need to set up the null and alternative hypotheses.
+
+Null Hypothesis: The weight loss drug is not significantly effective, and the mean weight loss is not different from zero.
+Alternative Hypothesis: The weight loss drug is significantly effective, and the mean weight loss is different from zero.
+
+Using a two-tailed t-test with a significance level of 0.05 and 50 degrees of freedom (n-1), we can calculate the t-statistic:
+
+t = (sample mean - hypothesized mean) / (standard error of the mean)
+standard error of the mean = standard deviation / square root of sample size
+
+t = (6 - 0) / (2.5 / sqrt(50)) = 12
+
+The critical value for a two-tailed t-test with 50 degrees of freedom and a significance level of 0.05 is ±2.009. Since our calculated t-value (12) is greater than the critical value (±2.009), we reject the null hypothesis and conclude that the weight loss drug is significantly effective.
+
+
+Q11. In a survey of 500 people, 65% reported being satisfied with their current job. Calculate the 95%
+confidence interval for the true proportion of people who are satisfied with their job.
+
+ANS. To calculate the 95% confidence interval for the true proportion of people who are satisfied with their job, we can use the following formula:
+
+confidence interval = sample proportion ± margin of error
+margin of error = z-score * standard error
+standard error = square root of [(sample proportion * (1 - sample proportion)) / sample size]
+
+Using a z-score of 1.96 (corresponding to a 95% confidence level) and the given values, we can calculate the confidence interval:
+
+standard error = sqrt[(0.65 * 0.35) / 500] = 0.027
+margin of error = 1.96 * 0.027 = 0.053
+confidence interval = 0.65 ± 0.053
+confidence interval = (0.597, 0.703)
+
+Therefore, we can be 95% confident that the true proportion of people who are satisfied with their job falls between 0.597 and 0.703.
+
+Q12. A researcher is testing the effectiveness of two different teaching methods on student performance.
+Sample A has a mean score of 85 with a standard deviation of 6, while sample B has a mean score of 82
+with a standard deviation of 5. Conduct a hypothesis test to determine if the two teaching methods have a
+significant difference in student performance using a t-test with a significance level of 0.01.
+
+ANS. A researcher is testing the effectiveness of two different teaching methods on student performance.
+Sample A has a mean score of 85 with a standard deviation of 6, while sample B has a mean score of 82
+with a standard deviation of 5. Conduct a hypothesis test to determine if the two teaching methods have a
+significant difference in student performance using a t-test with a significance level of 0.01.
+
+Assuming equal variances for both samples, we can use a two-sample t-test to test if there is a significant difference in the means of the two samples.
+
+The null hypothesis is that there is no significant difference between the two means, while the alternative hypothesis is that there is a significant difference.
+
+Let's assume a significance level of 0.01, which corresponds to a confidence level of 99%.
+
+The formula for the t-test statistic is:
+
+t = (x1 - x2) / (s_p * sqrt(1/n1 + 1/n2))
+
+where x1 and x2 are the sample means, n1 and n2 are the sample sizes, and s_p is the pooled standard deviation.
+
+s_p = sqrt(((n1-1)*s1^2 + (n2-1)*s2^2) / (n1 + n2 - 2))
+
+Plugging in the values, we get:
+
+s_p = sqrt(((496^2) + (495^2)) / (98)) = 5.38
+
+t = (85-82) / (5.38 * sqrt(1/49 + 1/49)) = 2.52
+
+The degrees of freedom for the t-test is (n1 + n2 - 2) = 96.
+
+Using a t-distribution table with a significance level of 0.01 and 96 degrees of freedom, the critical t-value is ±2.62.
+
+Since our calculated t-value of 2.52 is less than the critical t-value of 2.62, we fail to reject the null hypothesis. Therefore, we can conclude that there is not enough evidence to suggest that there is a significant difference in student performance between the two teaching methods at a 99% confidence level.
+
+Q13. A population has a mean of 60 and a standard deviation of 8. A sample of 50 observations has a mean
+of 65. Calculate the 90% confidence interval for the true population mean.
+
+ANS. A population has a mean of 60 and a standard deviation of 8. A sample of 50 observations has a mean
+of 65. Calculate the 90% confidence interval for the true population mean.
+
+To calculate the 90% confidence interval for the true population mean, we can use the formula:
+
+CI = x̄ ± z*(σ/√n)
+
+where x̄ is the sample mean, σ is the population standard deviation, n is the sample size, and z is the critical value from the standard normal distribution.
+
+Plugging in the values, we get:
+
+CI = 65 ± 1.645*(8/√50) = (63.04, 66.96)
+
+Therefore, we can say with 90% confidence that the true population mean falls within the range of 63.04 to 66.96.
+
+
+Q14. In a study of the effects of caffeine on reaction time, a sample of 30 participants had an average
+reaction time of 0.25 seconds with a standard deviation of 0.05 seconds. Conduct a hypothesis test to
+determine if the caffeine has a significant effect on reaction time at a 90% confidence level using a t-test.
+
+ANS.  In a study of the effects of caffeine on reaction time, a sample of 30 participants had an average
+reaction time of 0.25 seconds with a standard deviation of 0.05 seconds. Conduct a hypothesis test to
+determine if the caffeine has a significant effect on reaction time at a 90% confidence level using a t-test.
+
+We can use a one-sample t-test to test if there is a significant difference between the sample mean and the population mean.
+
+The null hypothesis is that there is no significant difference between the sample mean and the population mean, while the alternative hypothesis is that there is a
